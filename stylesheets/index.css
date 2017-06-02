@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../images/1.jpg);
+    /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p {
+ color: black;
+}
+
+div {
+  color: white;
+  height: 1000px;
+  background-color: blue;
+  font-size: 36px;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
