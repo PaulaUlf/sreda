@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 1);
     overflow-y: hidden;
@@ -19,23 +19,27 @@ body {
 
 .overlay-content {
     position: relative;
-    top: 100%;
+    top: 0%;
     width: 100%;
+    height: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15vh;
 }
 
 .overlay a {
+    z-index: 3;
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 15vh;
+    font-weight: bold;
     color: #818181;
     display: block;
     transition: 0.3s;
+    letter-spacing: 1vh;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: white;
 }
 
 .overlay .closebtn {
@@ -45,7 +49,7 @@ body {
     font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 840px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
   .overlay .closebtn {
