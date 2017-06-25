@@ -14,13 +14,14 @@
   <meta property="og:title" content="Sreda">
   <meta property="og:description" content="Сайт новых рекреационных пространств в Москве, расположившихся в заброшенных зданиях столицы.">
 
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/ico" href="favicon.ico">
 
   <link rel="stylesheet" href="stylesheets/index.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/social-likes.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
   <div id="Nav" class="overlay">
@@ -32,20 +33,31 @@
     </div>
   </div>
 
+<div class="menu">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; меню</span>
+</div>
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-
-<p>Это совершенно новый взгляд на городское пространство!</p>
-<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+<!-- <p>Это совершенно новый взгляд на городское пространство!</p> -->
 
 <div class="parallax"></div>
 
 <div id="block">
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.<a href="draw.html">DRAW!</a>
+  <section class="video">
+
+
+      <iframe src="https://player.vimeo.com/video/223027766" width="1280" height="720" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 </div>
 
-<div class="parallax"></div>
+<div class="parallax">
+</div>
+
+<!-- 
+  <div class="social-likes social-likes_single" data-url="https://github.com/PaulaUlf/HSEDC2016-Folio-paulaulf" data-single-title="Share">
+    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+    <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+  </div> -->
 
 
 <script>
